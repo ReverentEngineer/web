@@ -14,6 +14,6 @@ jobs:
         submodules: true
     - name: Clone Pages repository
       run: |
-        git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/ReverentEngineer/ReverentEngineer.github.io public
+        git clone https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/ReverentEngineer/ReverentEngineer.github.io public
     - name: Deploy
       run: ./ci/deploy.sh
