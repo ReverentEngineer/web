@@ -17,6 +17,7 @@ jobs:
     - uses: actions/checkout@v1
       with: 
         repository: ReverentEngineer/ReverentEngineer.github.io
+        ref: master
         path: public
     - name: Deploy
       run: ./ci/deploy.sh
