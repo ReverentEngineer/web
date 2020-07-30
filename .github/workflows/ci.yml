@@ -13,7 +13,7 @@ jobs:
       with:
         recursive: true
     - name: Install Hugo
-      run: apt install hugo
+      run: sudo apt install hugo
     - uses: actions/checkout@v1
       with: 
         repository: RevernetEngineer/ReverentEngineer.github.io
