@@ -1,0 +1,22 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: main
+
+jobs:
+  run:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        recursive: true
+    - name: Install Hugo
+      run: apt install hugo
+    - uses: actions/checkout@v1
+      with: 
+        repository: RevernetEngineer/ReverentEngineer.github.io
+        path: public
+    - name: Deploy
+      run: ./ci/deploy.sh
