@@ -1,10 +1,10 @@
 #!/bin/bash
-DEPLOY_DIR=${GITHUB_WORKSPACE}/../public
-SOURCE_DIR=${GITHUB_WORKSPACE}
-cd $DEPLOY_DIR && git rm -r . && cd $SOURCE_DIR
+git clone https://${GITHUB_TOKEN}@github.com/ReverentEngineer/ReverentEngineer.github.io public || exit 1
+cd public && git rm -r . && cd .. || exit 1
 curl -L  https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.tar.gz | tar -xz hugo || exit 1
-./hugo -d $DEPLOY_DIR || exit 1
-cd $DEPLOY_DIR || exit 1
+./hugo || exit 1
+cd public || exit 1
+echo "reverentengineer.com" > CNAME
 git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git config --local user.name "${GITHUB_ACTOR}"
 git add .
