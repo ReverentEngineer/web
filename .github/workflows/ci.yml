@@ -16,7 +16,7 @@ jobs:
       run: sudo apt install hugo
     - uses: actions/checkout@v1
       with: 
-        repository: RevernetEngineer/ReverentEngineer.github.io
+        repository: ReverentEngineer/ReverentEngineer.github.io
         path: public
     - name: Deploy
       run: ./ci/deploy.sh
