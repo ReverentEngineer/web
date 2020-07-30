@@ -15,7 +15,7 @@ pygmentscodefencesguesssyntax = true
 [params]
     author = "Jeff Caffrey-Hill"
     info = "Software Engineer"
-    description = "Jeff Caffrey-Hill: Software Engineer, blog and portfolio"
+    description = "Jeff Caffrey-Hill's software engineering blog and portfolio"
     keywords = "blog,developer,personal,portfolio"
     avatarurl = "images/avatar.png"
 
