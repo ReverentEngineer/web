@@ -5,7 +5,9 @@ draft: false
 ---
 
 + [rdg](/rdg) - A library and application for generating data using regular expressions
-+ [ber](/ber) - A library for parsinf Basic Encoding Rules (BER) encoded data
++ [ber](/ber) - A library for parsing Basic Encoding Rules (BER) encoded data
++ [vim-cmake](https://github.com/ReverentEngineer/vim-cmake) - A plugin for interacting with CMake in vim
++ [vim-junit](https://github.com/ReverentEngineer/vim-junit) - A plugin for viewing JUnit results in a structured way in vim
 + [git-code-review](/git-code-review) - A python module for performing code reviews inside git history
 + [minimalist-map](/minimalist-map) - A simple, minimalist map implementation in C
 + [cron-build](https://github.com/ReverentEngineer/cron-build) - A perl script to support cron-based build automation of git repositories
